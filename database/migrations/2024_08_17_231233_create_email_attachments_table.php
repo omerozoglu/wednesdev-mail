@@ -15,6 +15,8 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->foreignUuid('email_id')->constrained('emails');
             $table->string('file_path');
+            $table->string('file_name');
+            $table->string('mime_type');
             $table->timestamps();
         });
     }
