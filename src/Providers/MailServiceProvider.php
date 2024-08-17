@@ -1,10 +1,10 @@
 <?php
 
-namespace YourVendor\YourPackageName\Providers;
+namespace Wednesdev\Mail\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class YourPackageServiceProvider extends ServiceProvider
+class MailServiceProvider extends ServiceProvider
 {
     public function register()
     {
