@@ -1,0 +1,33 @@
+{
+  "name": "wednesdev/email",
+  "description": "Simplify and enhance your email sending capabilities in Laravel 11 projects with this highly extendable and efficient email package.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Wednesdev\\Email\\": "src/",
+      "Wednesdev\\Email\\Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "authors": [
+    {
+      "name": "omerozoglu",
+      "email": "omerozoglu.1@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.1",
+    "laravel/framework": "^11.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Wednesdev\\Email\\MailServiceProvider"
+      ],
+      "aliases": {
+        "EmailType": "Wednesdev\\Email\\Enums\\EmailType"
+      }
+    }
+  }
+}
