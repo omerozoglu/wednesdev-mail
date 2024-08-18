@@ -3,6 +3,7 @@
 namespace Wednesdev\Mail\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Config;
 use Wednesdev\Mail\Database\Seeders\EmailDatabaseSeeder;
 
 class EmailPackageCommand extends Command

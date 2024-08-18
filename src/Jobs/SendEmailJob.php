@@ -17,11 +17,11 @@ class SendEmailJob implements ShouldQueue
      * Create a new job instance.
      */
     public function __construct(
-        protected $mailable,
-        protected $templateName,
-        protected $to,
-        protected $data = [],
-        protected $locale = null)
+        public $mailable,
+        public $templateName,
+        public $to,
+        public $data = [],
+        public $locale = null)
     {
         //
     }
