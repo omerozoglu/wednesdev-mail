@@ -13,8 +13,6 @@ This package is in active development. While we're working hard to complete and 
 - Documentation may be incomplete or outdated in places.
 - There might be unforeseen bugs or issues.
 
-We appreciate your interest and patience. If you'd like to contribute or provide feedback, please check the "Contributing" section below.
-
 ## Description
 
 This package aims to simplify and enhance email sending capabilities in Laravel 11 applications. It provides a flexible system for managing email templates, translations, and sending emails with ease.
