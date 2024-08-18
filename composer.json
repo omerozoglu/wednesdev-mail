@@ -6,7 +6,13 @@
   "autoload": {
     "psr-4": {
       "Wednesdev\\Mail\\": "src/",
-      "Wednesdev\\Mail\\Database\\Seeders\\": "database/seeders/"
+      "Wednesdev\\Mail\\Database\\Seeders\\": "database/seeders/",
+      "Wednesdev\\Mail\\Database\\Factories\\": "database/factories/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wednesdev\\Mail\\Tests\\": "tests/"
     }
   },
   "authors": [
@@ -29,5 +35,17 @@
         "Email": "Wednesdev\\Mail\\Facades\\Email"
       }
     }
+  },
+  "require-dev": {
+    "pestphp/pest": "3.x-dev",
+    "orchestra/testbench": "^9.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest"
   }
 }
