@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('email_templates_translations', function (Blueprint $table) {
+        Schema::create('email_template_translations', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->foreignUuid('email_template_id')->constrained('email_templates');
             $table->string('locale')->index();
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('email_templates_translations');
+        Schema::dropIfExists('email_template_translations');
     }
 };
