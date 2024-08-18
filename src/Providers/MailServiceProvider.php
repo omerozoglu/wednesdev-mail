@@ -24,7 +24,7 @@ class MailServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // Load migrations
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'../../database/migrations');
 
         // Publish migrations
         $this->publishes([
