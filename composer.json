@@ -6,7 +6,7 @@
   "autoload": {
     "psr-4": {
       "Wednesdev\\Mail\\": "src/",
-      "Wednesdev\\Mail\\Src\\Database\\Seeders\\": "database/seeders/"
+      "Wednesdev\\Mail\\Database\\Seeders\\": "database/seeders/"
     }
   },
   "authors": [
@@ -23,10 +23,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Wednesdev\\Mail\\Src\\Providers\\MailServiceProvider"
+        "Wednesdev\\Mail\\Providers\\MailServiceProvider"
       ],
       "aliases": {
-        "EmailType": "Wednesdev\\Mail\\Src\\Enums\\EmailType"
+        "Email": "Wednesdev\\Mail\\Facades\\Email"
       }
     }
   }
