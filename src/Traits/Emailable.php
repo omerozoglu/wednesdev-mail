@@ -2,6 +2,7 @@
 
 namespace Wednesdev\Mail\Traits;
 
+use Illuminate\Support\Facades\Mail;
 use Wednesdev\Mail\Models\Email;
 
 /**
@@ -34,8 +35,7 @@ trait Emailable
      */
     public function sendEmail($templateName, $recipientEmail, $data = [], $locale = null): mixed
     {
-        // Assuming you have an Email facade or service
-        $email = \YourNamespace\Facades\Email::send($templateName, $recipientEmail, $data, $locale);
+        $email = Mail::send($templateName, $recipientEmail, $data, $locale);
         $this->emails()->save($email);
         return $email;
     }
